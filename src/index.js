@@ -8,6 +8,7 @@ import  store  from './store'
 import RouteComp from './routes/router'
 import { HashRouter as Router} from 'react-router-dom';
 
+
 ReactDOM.render(
   <Provider store={store}>
    <MuiThemeProvider>

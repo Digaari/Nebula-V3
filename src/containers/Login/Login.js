@@ -1,9 +1,7 @@
 import { connect } from 'react-redux'
 import React, {Component} from 'react'
-import TestComponent from '../../components/MenuComponent';
-import {Basic} from '../../constants/action';
-import {textChange} from './action'
-import Nebula from '../../components/LandingPage/index'
+// import {textChange} from './action'
+import SignIn from '../../components/Login';
 
 class Home extends Component {    
     constructor(props,context){
@@ -13,14 +11,14 @@ class Home extends Component {
         //Initial call will go here
     }
     
-    onButtonClick = () =>{
-        this.props.dispatch(textChange())
-    }
+    // onButtonClick = () =>{
+    //     this.props.dispatch(textChange())
+    // }
 
     render() {
         return (
             <div>
-                <Nebula label={this.props.buttonText} onClick={() => this.onButtonClick()}/>
+                <SignIn label={this.props.buttonText} onClick={() => this.onButtonClick()}/>
             </div>
         )
     }
@@ -35,5 +33,14 @@ const mapStateToProps = (state, ownProps) => {
         buttonText: state.text
     }
 }
-const App = connect(mapStateToProps)(Home)
-export default App;
+const Login = connect(mapStateToProps)(Home)
+export default Login;
+
+
+
+
+
+
+
+
+
