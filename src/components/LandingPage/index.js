@@ -16,6 +16,7 @@ import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
+
 // import Markdown from './Markdown';
 // import post1 from './blog-post.1.md';
 // import post2 from './blog-post.2.md';
@@ -157,7 +158,7 @@ export default function Nebula() {
       <CssBaseline />
       <Container maxWidth="lg">
         <Toolbar className={classes.toolbar}>
-          <Button size="small">Subscribe</Button>
+          {/* <Button size="small">Subscribe</Button> */}
           <Typography
             component="h2"
             variant="h5"
@@ -174,6 +175,10 @@ export default function Nebula() {
           
           <Button href="/#/signup" variant="outlined" size="small">
             Sign up
+          </Button>
+              
+          <Button href="/#/login" variant="outlined" size="small">
+            Log In
           </Button>
           
         </Toolbar>
@@ -206,16 +211,7 @@ export default function Nebula() {
             <Grid container>
               <Grid item md={6}>
                 <div className={classes.mainFeaturedPostContent}>
-                  <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                    Title of a longer featured blog post
-                  </Typography>
-                  <Typography variant="h5" color="inherit" paragraph>
-                    Multiple lines of text that form the lede, informing new readers quickly and
-                    efficiently about what&apos;s most interesting in this post&apos;s contents.
-                  </Typography>
-                  <Link variant="subtitle1" href="#">
-                    Continue reading…
-                  </Link>
+              {/* <AssignmentCreate/> */}
                 </div>
               </Grid>
             </Grid>
